@@ -2,6 +2,9 @@ require 'open-uri'
 require 'json'
 
 class GamesController < ApplicationController
+  def home
+  end
+
   def new
     @letters = []
     @letters << ('A'..'Z').to_a.sample(10)
